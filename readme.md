@@ -3,3 +3,4 @@
 ## HTML
 Conjunto de etiquetas para estructurar un sitio web, una maqueta, un esqueleto, luego con css trabajamos en la apariencia.
 Se basa en etiquetas, que ayudan a que el contenido este estructurado dentro de un documento html.
+**OJO** con los estilos del navegador por defecto, espaciado, tipografia, con css todo esto cambia, incluso algunos script de js, google fonts...
