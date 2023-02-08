@@ -4,3 +4,10 @@
 Conjunto de etiquetas para estructurar un sitio web, una maqueta, un esqueleto, luego con css trabajamos en la apariencia.
 Se basa en etiquetas, que ayudan a que el contenido este estructurado dentro de un documento html.
 **OJO** con los estilos del navegador por defecto, espaciado, tipografia, con css todo esto cambia, incluso algunos script de js, google fonts...
+
+## Html5 etiquetas, estructura, ultima version estable
+DOCTYPE!, solo le dice al browser que usamos html5
+**Etiquetas con atributos?? implementado en html5???**
+**html** => esta etiqueta, seria al contenido padre...engloba tanto el head, como el body, script...
+**head** => encabezado, **informacion que le entregamos al navegador**, las etiquetas meta, generalmente no la ve el user?? solo el title, todo lo que esta dentro del head es info para el browser, info como palabras claves, descripcion de la web, titulo, estilos, scripts tambien...
+**body** => es todo el contenido, todo lo que vera el user.
