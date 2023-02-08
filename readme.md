@@ -14,3 +14,16 @@ DOCTYPE!, solo le dice al browser que usamos html5
 
 ## Encabezados/Titulos y subtitulos
 Desde el h1 al h6, varian en tamano, el 1 es mas grande y va a mas pequeno hasta el h6...
+
+## Formato de textos
+Las puedo ir mezclando todas en un parrafo, titulo, texto en general. Al igual que body y html, esta lleno de sub-etiquetas...
+b => negritas (bold)
+i => cursivas
+s => para tachar texto
+strong => le remarca, algo mas que las negritas, es para lo importante, que lo pinte como las negritas es cuestion del navegador.
+del => para eliminar texto
+ins => texto insertado (esta subrayado)
+sub => tengo en subindice
+sup => texto en super indice, es como el elevado en los numeros...
+small => texto pequeno
+mark => texto destacado, amarillo en google chrome.
