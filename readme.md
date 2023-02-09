@@ -60,3 +60,7 @@ PNG ICO
 
 ## Button
 Etiqueta html5??
+
+## Enlaces varios (emoticones para web...)
+[Emojis](https://unicode-table.com/es/sets/top-emoji/)
+[AtajosVscode](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
