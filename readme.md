@@ -39,3 +39,8 @@ li => item de la lista, la 'fila'
 ## Vinculos, links
 href toma el enlace para redireccion, ojo con las comillas, al igual que JS si abro con ` ' ", cierro con la misma comilla.
 ``` <a href="Esto es obligatorio"> Esto tambien </a> ```
+
+## Imagenes
+Esta etiqueta no tiene cierre, ya que no pintamos contenido?? la img se pone ne le src, alt para mensaje cuando no se encuentra la imagen. **alt** es importante para el SEO
+En src, pongo o el link de la imagen o la ruta donde se encuentra dentro del pc.
+``` <img src="" alt=""> ```
