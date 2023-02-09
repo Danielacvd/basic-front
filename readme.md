@@ -71,4 +71,6 @@ Parte con ```<table></table>```, dentro van las filas y columnas
 <td> => columna (del de tr), es donde queda el contenido del tr (fila)
 **border="1"** Atributo dentro de table, agrega los bordes da table...
 
-
+## Tablas: Encabezados o Headers
+<th> => Encabezado
+Ahora en cada fila va el elemento correspondiente de cada encabezado.
