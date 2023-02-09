@@ -74,3 +74,8 @@ Parte con ```<table></table>```, dentro van las filas y columnas
 ## Tablas: Encabezados o Headers
 <th> => Encabezado
 Ahora en cada fila va el elemento correspondiente de cada encabezado.
+
+## Tablas: Titulo o Caption
+Se puede usar el h1 .. h6, pero tambien hay una etiqueta propia de las tablas para los titulos...
+```<caption>Titulo</caption>``` Va dentro de <table></table> y queda centrado encima de la tabla. Siempre quedara encima de la tabla, aunque la definamos al final. El navegador establece ese orden.
+
