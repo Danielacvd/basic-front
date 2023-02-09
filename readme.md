@@ -44,3 +44,16 @@ href toma el enlace para redireccion, ojo con las comillas, al igual que JS si a
 Esta etiqueta no tiene cierre, ya que no pintamos contenido?? la img se pone ne le src, alt para mensaje cuando no se encuentra la imagen. **alt** es importante para el SEO
 En src, pongo o el link de la imagen o la ruta donde se encuentra dentro del pc.
 ``` <img src="" alt=""> ```
+Formatos de imagen soportada
+JPEG
+GIF, including animated GIFs
+PNG
+APNG
+SVG
+BMP
+BMP ICO
+PNG ICO
+
+## Vinculos / Links con imagenes.
+``` <a href="link"><img src="path img" alt="no hay foto"></a> ```
+
