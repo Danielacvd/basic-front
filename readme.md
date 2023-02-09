@@ -32,3 +32,6 @@ mark => texto destacado, amarillo en google chrome.
 ul => estructura de listas desordenadas
 ol => estructura de listas ordenadas
 li => item de la lista, la 'fila'
+
+## Comentarios html
+<!-- <li>Elemento</li> -->
