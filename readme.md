@@ -64,3 +64,11 @@ Etiqueta html5??
 ## Enlaces varios (emoticones para web...)
 [Emojis](https://unicode-table.com/es/sets/top-emoji/)
 [AtajosVscode](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+
+## Tablas
+Parte con ```<table></table>```, dentro van las filas y columnas
+<tr> => fila (dentro de table) de la tabla, si agrego otro td en table, voy a tener la segunda fila...
+<td> => columna (del de tr), es donde queda el contenido del tr (fila)
+**border="1"** Atributo dentro de table, agrega los bordes da table...
+
+
