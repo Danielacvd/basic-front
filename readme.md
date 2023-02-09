@@ -39,6 +39,7 @@ li => item de la lista, la 'fila'
 ## Vinculos, links
 href toma el enlace para redireccion, ojo con las comillas, al igual que JS si abro con ` ' ", cierro con la misma comilla.
 ``` <a href="Esto es obligatorio"> Esto tambien </a> ```
+``` <a href="pagina_2.html"> Pagina2 </a> ```
 
 ## Imagenes
 Esta etiqueta no tiene cierre, ya que no pintamos contenido?? la img se pone ne le src, alt para mensaje cuando no se encuentra la imagen. **alt** es importante para el SEO
@@ -57,3 +58,5 @@ PNG ICO
 ## Vinculos / Links con imagenes.
 ``` <a href="link"><img src="path img" alt="no hay foto"></a> ```
 
+## Button
+Etiqueta html5??
