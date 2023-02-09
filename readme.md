@@ -35,3 +35,7 @@ li => item de la lista, la 'fila'
 
 ## Comentarios html
 <!-- <li>Elemento</li> -->
+
+## Vinculos, links
+href toma el enlace para redireccion, ojo con las comillas, al igual que JS si abro con ` ' ", cierro con la misma comilla.
+``` <a href="Esto es obligatorio"> Esto tambien </a> ```
