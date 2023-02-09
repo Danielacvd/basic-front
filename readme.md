@@ -27,3 +27,8 @@ sub => tengo en subindice
 sup => texto en super indice, es como el elevado en los numeros...
 small => texto pequeno
 mark => texto destacado, amarillo en google chrome.
+
+## Listas o indices
+ul => estructura de listas desordenadas
+ol => estructura de listas ordenadas
+li => item de la lista, la 'fila'
