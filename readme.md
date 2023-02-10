@@ -79,3 +79,9 @@ Ahora en cada fila va el elemento correspondiente de cada encabezado.
 Se puede usar el h1 .. h6, pero tambien hay una etiqueta propia de las tablas para los titulos...
 ```<caption>Titulo</caption>``` Va dentro de <table></table> y queda centrado encima de la tabla. Siempre quedara encima de la tabla, aunque la definamos al final. El navegador establece ese orden.
 
+## Tablas: thead, tbody, tfoot.
+Si tenemos muchos tr, puede que el th se nos pierda.
+La tabla se puede estructurar en diferentes secciones
+```<thead></thead>``` => Para el encabezado, le agregamos el tr que contiene los th.
+```<tbody></tbody>``` => aqui todo el contenido de la tabla. Todos los elementos tr...
+```<tfoot></tfoot> =>``` se puede colocar donde se quiera, pero la recomendacion es despues del thead, es el mismo encabezado, pero para la parte inferior de la tabla. Es como para volver a poner el caption, pero en la parte del fondo, **recomendado para tablas extensas**
