@@ -114,3 +114,18 @@ Password oculta la info, los caracteres.
 **textArea** no va dentro de un input
 ``` <textarea name="" id="" cols="30" rows="10"></textarea> ```, el tamano predeterminado lo asigna las ```cols``` y ```rows```.
 **Radio** es como un checkBox, es como para seleccionar el label haciendo click en el circulo, alternativas?, ademas tenemos que entregar el ```value="gato"```, que es lo que enviaremos al server cuando se procese el form.
+
+
+## Inputs: color, date, file, month, range, time, week
+Dentro del input, en el type tambien se le puede asignar tipo button, de esta forma ```<input type="button" name="" id="" value="Enviar">```, tambien hay type color ```<input type="color" name="" id="" value="Enviar">```
+**type="date"**, y vemos un calendario
+**type="file"**, y vemos una caja para seleccionar un archivo.
+**type="month"**, y vemos un calendario de solo meses
+**type="range"**, y vemos una linea para seleccionar un numero del 1 al 100
+**type="time"**, y vemos reloj para seleccionar la hora. Por defecto es la del navegador en ese segundo.
+**type="week"**, y podemos seleccionar la semana del anio!
+
+
+
+
+
