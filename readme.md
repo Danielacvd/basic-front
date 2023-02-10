@@ -101,3 +101,8 @@ Dentro del form podemos encontrar **action=""** que es un atributo que sirve par
 ```<input></input>``` Este input es la cajita donde se escribiran los datos del user... tiene un atributo **type=""** que es para agregar caracteristicas a los inputs (text, email, password...)(No tiene etiqueta de cierre), tambien puedo agregar un atributo **placeholder="Escribe aca"**, es una ayuda para la cajita, cuando se escribe en el input la ayuda se quita, atributo **id="nombre"** para relacionarlo con el label...
 ```<button></button>``` Para procesar ese formulario... y como es un boton dentro de un form, le agregamos ```type="submit"```, este tipo le dice al boton que va a procesar ese form. (preventDefault...)
 ```<label></label>``` es la etiqueta para relacionar, poner un texto de ayuda para los inputs, es opcional. Cuando se procesa el DOM es util. Relacionamos el texto con la cajita con el atributo **for="nombre"** que recibo el 'id' del input, tiene que ser el mismo que se use en el atributo del input id='nombre', **asi quedan relacionados el input con el label**.
+
+## Formularios: Enviando Informacion
+Si quiero recibir lo que se escribio en el input, tengo que agregar el atributo **name="nombreAqui"**, para asi relacionarlo con un nombre especifico. Ahora **nombreAqui** va a tener asociado el valor que se ingrese al input. Casi como una variable. Input puede resibir un name.
+El **action=""** del form, es la accion del formulario, cada vez que se presiona el boton, se ejecutara action.La accion nos dice cual sera el destino de los datos de los inputs y a **name=""** le asociamos el valor que ingresa el user.
+```<form action="enviando.html">``` cuando hago click en el boton me redirige y en la **URL** va lo que escribi en los inputs...
