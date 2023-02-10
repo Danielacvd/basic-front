@@ -85,3 +85,11 @@ La tabla se puede estructurar en diferentes secciones
 ```<thead></thead>``` => Para el encabezado, le agregamos el tr que contiene los th.
 ```<tbody></tbody>``` => aqui todo el contenido de la tabla. Todos los elementos tr...
 ```<tfoot></tfoot> =>``` se puede colocar donde se quiera, pero la recomendacion es despues del thead, es el mismo encabezado, pero para la parte inferior de la tabla. Es como para volver a poner el caption, pero en la parte del fondo, **recomendado para tablas extensas**
+
+## Tablas: Combinar filas o columnas
+Combinar celdas => se usa un td para cubrir 2 columnas, y al td se le agrega el atributo td ```colspan="AlgunNumero"```, el colspan toma el numero que le entregamos para combinar. Asi esa fila usa 2 columnas... **El segundo td, toma 2 colummnas para mostrar su contenido.**
+**Tambien se pueden mezclar final** 
+**```<br>```** => salto de linea en HTML
+**```<br>```** => linea horizontal
+**``` <td rowspan="3">Sin info</td> ```** => Ahora completara de forma vertical los campos que yo le indique, las filas que le indique.
+Se puede mezclar horizontal **colspan** y veticalmente **rowspan**
