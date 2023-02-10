@@ -106,3 +106,11 @@ Dentro del form podemos encontrar **action=""** que es un atributo que sirve par
 Si quiero recibir lo que se escribio en el input, tengo que agregar el atributo **name="nombreAqui"**, para asi relacionarlo con un nombre especifico. Ahora **nombreAqui** va a tener asociado el valor que se ingrese al input. Casi como una variable. Input puede resibir un name.
 El **action=""** del form, es la accion del formulario, cada vez que se presiona el boton, se ejecutara action.La accion nos dice cual sera el destino de los datos de los inputs y a **name=""** le asociamos el valor que ingresa el user.
 ```<form action="enviando.html">``` cuando hago click en el boton me redirige y en la **URL** va lo que escribi en los inputs...
+
+## Inputs: text, email, password, textarea, radio
+En los inputs hay varios ***type=""**, text, email, password, textarea(que es mas grande que text), radio...
+A los inputs se le puede agregar el atributo **required**, que es una validacion extra...
+Password oculta la info, los caracteres.
+**textArea** no va dentro de un input
+``` <textarea name="" id="" cols="30" rows="10"></textarea> ```, el tamano predeterminado lo asigna las ```cols``` y ```rows```.
+**Radio** es como un checkBox, es como para seleccionar el label haciendo click en el circulo, alternativas?, ademas tenemos que entregar el ```value="gato"```, que es lo que enviaremos al server cuando se procese el form.
