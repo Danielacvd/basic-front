@@ -21,3 +21,10 @@ Estilos en linea, son los que tienen mas jerarquia (estilos en cascadas), se apl
 **Usar etiqueta style dentro del head** => dentro de esta etiqueta resivo lo mismo que un archivo aparte. Selecciono elementos y les doy estilos.
 **Lo mas recomendable es crear un archivo aparte, con la extension .css y vincularlo al html.**, separamos los archivos y el html queda mas limpio.
 **Si se sobre-escriben los estilos, siempre prebalece el ultimo (estilos en linea.)**
+
+## Colores: cuatro alternativas para sus valores
+En el archivo css, puede llamar al color por su nombre, red, blue, green, peru... (El tema de los colores por nombre es que son limitados 140 aprox...)
+Puede ser un color hexadecimal, #ffffff, #00ffcc, Red Grn Blue.
+BackGroundColor, color de fondo.```background-color: pink;```
+RGB y RGBA =>``` color: rgb(240, 100, 308); ``` ``` rgba(00, 50, 00, 0.7); ```, el ultimo numero en rgba hace alucion a la transparencia, va del 0, transparente, 1 sin transparencia.
+Hay diferentes propiedades que tiene la posibilidad de agregar un valor de color.
