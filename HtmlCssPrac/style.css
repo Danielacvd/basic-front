@@ -8,6 +8,11 @@ secondary: #f69e7b
 light: #eedad1
 info: #d4b5b0
 */
-h1{
+
+.bg-primary{
+    background-color: #383e56;
+}
+
+.text-light{
     color: #eedad1
 }
