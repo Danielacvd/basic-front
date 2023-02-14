@@ -6,3 +6,11 @@ p{
     color: rgb(240, 100, 308);
     background-color: rgba(00, 50, 00, 0.7);
 }
+
+#parrafoId{
+    color: green;
+}
+
+.parrafoId{
+    color: violet;
+}
