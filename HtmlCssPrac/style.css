@@ -14,5 +14,13 @@ info: #d4b5b0
 }
 
 .text-light{
+    color: #f69e7b
+}
+
+.text-secondary{
     color: #eedad1
+}
+
+.text-center{
+    text-align: center;
 }

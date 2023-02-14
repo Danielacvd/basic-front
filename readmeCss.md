@@ -38,3 +38,6 @@ Seleccionar un elemento de HTML en el CSS, esto seleccionara a todos esos elemen
 
 ## Comentarios
 Con como los multiLine de Js, **/* */**.
+
+## Buenas practicas
+Siempre crear clases especificas para algo, para luego poder ir reutilizando, como las funciones...
