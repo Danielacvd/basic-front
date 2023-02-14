@@ -35,3 +35,6 @@ Seleccionar un elemento de HTML en el CSS, esto seleccionara a todos esos elemen
 **Los ids**, en html son unicos, no pueden haber de un elemento HTML con el mismo id. En el Html, en el elemento agrego id="nombreUnico" y en el CSS lo selecciono con #nombreUnico{} y agrego colores. El id no es muy usado en CSS ya que generalmente son unicos, y se pones mas de 1 puede causar problemas...
 **Las clases** => son de los mas usando en CSS. en HTML lo declaramos como class="nombreClase" y en el CSS .nombreClase{}.
 **# => id, . => clase, elemento HTML forma general**
+
+## Comentarios
+Con como los multiLine de Js, **/* */**.
