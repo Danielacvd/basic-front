@@ -21,3 +21,23 @@ Estilos en linea, son los que tienen mas jerarquia (estilos en cascadas), se apl
 **Usar etiqueta style dentro del head** => dentro de esta etiqueta resivo lo mismo que un archivo aparte. Selecciono elementos y les doy estilos.
 **Lo mas recomendable es crear un archivo aparte, con la extension .css y vincularlo al html.**, separamos los archivos y el html queda mas limpio.
 **Si se sobre-escriben los estilos, siempre prebalece el ultimo (estilos en linea.)**
+
+## Colores: cuatro alternativas para sus valores
+En el archivo css, puede llamar al color por su nombre, red, blue, green, peru... (El tema de los colores por nombre es que son limitados 140 aprox...)
+Puede ser un color hexadecimal, #ffffff, #00ffcc, Red Grn Blue.
+BackGroundColor, color de fondo.```background-color: pink;```
+RGB y RGBA =>``` color: rgb(240, 100, 308); ``` ``` rgba(00, 50, 00, 0.7); ```, el ultimo numero en rgba hace alucion a la transparencia, va del 0, transparente, 1 sin transparencia.
+Hay diferentes propiedades que tiene la posibilidad de agregar un valor de color.
+
+## Tres formas de aplicar estilos en CSS (Etiquetas - ID - Classes)
+Esto para aplicar estilos a las etiquetas de HTML...
+Seleccionar un elemento de HTML en el CSS, esto seleccionara a todos esos elementos, ejemplo p{}, todo los parrafo quedaran con esos estilos **Esto es para estilos generales**.
+**Los ids**, en html son unicos, no pueden haber de un elemento HTML con el mismo id. En el Html, en el elemento agrego id="nombreUnico" y en el CSS lo selecciono con #nombreUnico{} y agrego colores. El id no es muy usado en CSS ya que generalmente son unicos, y se pones mas de 1 puede causar problemas...
+**Las clases** => son de los mas usando en CSS. en HTML lo declaramos como class="nombreClase" y en el CSS .nombreClase{}.
+**# => id, . => clase, elemento HTML forma general**
+
+## Comentarios
+Con como los multiLine de Js, **/* */**.
+
+## Buenas practicas
+Siempre crear clases especificas para algo, para luego poder ir reutilizando, como las funciones...
