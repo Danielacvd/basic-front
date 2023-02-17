@@ -17,3 +17,25 @@
 .pr-50{
     padding-right: 50px;
 }
+
+.p-total{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.p{
+    padding: 50px;
+}
+
+.px-100{
+    padding: 0 100px;
+}
+
+.py-100{
+    padding: 100px 0;
+}
+
+.p-linea{
+    padding: 50px 100px 50px 100px;
+}
