@@ -30,6 +30,40 @@ body {
     margin-top: 2rem;
 }
 
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.5em;
+    margin: 0 0.1em;
+    border-radius: 0.5em;
+}
+
+.btn-primary{
+
+    background-color: #8ecae6;
+    color: white;
+}
+
+
+.btn-secondary{
+
+    background-color: #219ebc;
+    color: white;
+}
+
+.btn-danger{
+
+    background-color: #fb8500;
+    color: black;
+}
+
+.btn-info{
+
+    background-color: #023047;
+    color: ghostwhite;
+}
+
 .logo{
     display: block;
     font-size: 3rem;
