@@ -1,0 +1,21 @@
+/*
+primary: 8ecae6
+secondary: 219ebc
+info: 023047
+danger: fb8500
+*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: gray;
+    font-family: 'Roboto', sans-serif;
+}
