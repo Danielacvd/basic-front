@@ -16,7 +16,6 @@ html {
 }
 
 body {
-    background-color: gray;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -25,9 +24,18 @@ body {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    background-color: aqua;
 }
 
 .mt-2{
     margin-top: 2rem;
+}
+
+.logo{
+    display: block;
+    font-size: 3rem;
+    padding: 1em;
+    text-decoration: none;
+    text-align: center;
+    background-color: #8ecae6;
+    color: white;
 }
