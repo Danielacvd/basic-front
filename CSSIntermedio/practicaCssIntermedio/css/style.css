@@ -73,3 +73,29 @@ body {
     background-color: #8ecae6;
     color: white;
 }
+
+.card{
+    width: 20rem;
+    background-color: #023047;
+    overflow: hidden;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.card-img{
+    width: 100%;
+}
+
+.card-body{
+    padding: 1em;
+}
+.card-body h5{
+    font-size: 1.5rem;
+    margin: 1em 0;
+    font-weight: 900;
+}
+
+
+.card-body p{
+    font-weight: 300;
+}
