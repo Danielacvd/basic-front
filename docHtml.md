@@ -125,7 +125,15 @@ Dentro del input, en el type tambien se le puede asignar tipo button, de esta fo
 **type="time"**, y vemos reloj para seleccionar la hora. Por defecto es la del navegador en ese segundo.
 **type="week"**, y podemos seleccionar la semana del anio!
 
-
-
-### Test
-
+### Resumen
+#### HTML
+- HTML5 etiquetas, estructura
+- Titulos, subtitulos
+- Formato textos
+- Listas, ordenadas y desordenadas
+- Links
+- Imagenes
+- Links con imagenes
+- Tablas
+- Formularios
+- Inputs
