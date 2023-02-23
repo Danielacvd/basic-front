@@ -32,12 +32,21 @@ Hay diferentes propiedades que tiene la posibilidad de agregar un valor de color
 ## Tres formas de aplicar estilos en CSS (Etiquetas - ID - Classes)
 Esto para aplicar estilos a las etiquetas de HTML...
 Seleccionar un elemento de HTML en el CSS, esto seleccionara a todos esos elementos, ejemplo p{}, todo los parrafo quedaran con esos estilos **Esto es para estilos generales**.
-**Los ids**, en html son unicos, no pueden haber de un elemento HTML con el mismo id. En el Html, en el elemento agrego id="nombreUnico" y en el CSS lo selecciono con #nombreUnico{} y agrego colores. El id no es muy usado en CSS ya que generalmente son unicos, y se pones mas de 1 puede causar problemas...
-**Las clases** => son de los mas usando en CSS. en HTML lo declaramos como class="nombreClase" y en el CSS .nombreClase{}.
-**# => id, . => clase, elemento HTML forma general**
+**Los ids**, en html son **unicos**, no pueden haber de un elemento HTML con el mismo id. En el Html, en el elemento HTML agrego id="nombreUnico" y en el CSS lo selecciono con #nombreUnico{} y agrego colores. El id no es muy usado en CSS ya que generalmente son unicos, y se pones mas de 1 puede causar problemas...
+**Las clases** => son de los mas usando en CSS. en HTML lo declaramos como class="nombreClase" y en el CSS .nombreClase{}. Clase que necesitemos la podemos crear.
+**# => id, . => clase, elemento HTML forma general**, el id tiene mas jerarquia, mas importancia, luego la clase, finalmente la etiqueta html.
+
+## Propiedades
+**width**, ancho, se puede usar con pixeles, porcentajes, rem, em.
+**heigth**, alto
+**text-align**, lineacion del texto, center, left, right, justify
+**background-color**, color de fondo
+
+
 
 ## Comentarios
 Con como los multiLine de Js, **/* */**.
 
 ## Buenas practicas
 Siempre crear clases especificas para algo, para luego poder ir reutilizando, como las funciones...
+Siempre separar los estilos en diferentes clase, asi se le pueden aplicar a diferentes etiquetas. Siempre ir desde lo mas general a lo especifico. Lo doy estilos generales a los parrafos, pero a cada parrafo especifico le agrego sus estilos propios, ejemplo formateo los parrafos de una forma general, y cambio el color de cada uno. Estructurar los estilos, los colores juntos, los espaciados juntos...
