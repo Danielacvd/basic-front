@@ -47,7 +47,16 @@ Tenemos el **display: block** y **display: inline**...
 **Cuando a los elementos de bloque, le agrego estos display: inline, se van a ir acomodando uno al lado del otro, ya no uno debajo del otro..., ESTO SE DEBE A QUE HAY ESPACIO DISPONIBLE y son elementos de linea...**
 **Tambien puedo transformar un elemento en linea a elemento de bloque**, a un <a> le creo una clase que tengo display: block, y se comportara de esa forma, usando el 100% del ancho disponible.
 
-
+## Padding
+Con el padding, **generamos espacio/relleno alrededor del contenido HTML**.
+Entonces tenemos una caja, un <div>, dentro un <p>, si al <p> le agrego un padding generare relleno, espacio entre el contenido y el borde. Tengo TOP BOTTOM LEFT RIGHT, que son la direccion, hacia donde quiero agregar el padding, **siguen el sentido del relog**, arriba derecha abajo izquierda.
+**Si solo doy un padding: 100px**, tomara esos 100px en todos los ladtos, si solo tengo 2 valores, el primero toma arriba abajo y el segundo derecha izquierda.
+**Ser siempre especificom ser mas declarativo, se ve mas codigo, pero queda mucho mas claro que es lo que hace X clase**, si quiero padding hacia arriba padding-top: 10px, y lo mismo para las demas orientaciones.
+**Siempre revisar en el inspector de elementos, el valor en pixeles, orientaciones, etc...**
+**px => padding para eje x, derecha izquerda**
+**py => padding para eje y, arriba abajo**
+![Modelo de cajas!](/imgDocu/modelo-caja.png "Modelo de cajas")
+![Modelo de cajas!](/imgDocu/modelo-cajas-2.png "Modelo de cajas")
 
 ## Buenas practicas
 Siempre crear clases especificas para algo, para luego poder ir reutilizando, como las funciones...
