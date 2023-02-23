@@ -70,6 +70,7 @@ Parte con ```<table></table>```, dentro van las filas y columnas
 <tr> => fila (dentro de table) de la tabla, si agrego otro td en table, voy a tener la segunda fila...
 <td> => columna (del de tr), es donde queda el contenido del tr (fila)
 **border="1"** Atributo dentro de table, agrega los bordes da table...
+**Yo defino una fila, y dentro de esta fila agrego las columnas**
 
 ## Tablas: Encabezados o Headers
 <th> => Encabezado
@@ -124,6 +125,19 @@ Dentro del input, en el type tambien se le puede asignar tipo button, de esta fo
 **type="range"**, y vemos una linea para seleccionar un numero del 1 al 100
 **type="time"**, y vemos reloj para seleccionar la hora. Por defecto es la del navegador en ese segundo.
 **type="week"**, y podemos seleccionar la semana del anio!
+
+## Etiquetas nuevas para estructurar el sitio
+**main**, es un elemento del html, representa el **contenido principal del body**, **Area principal del contenido, directamente relacionado al tema central, este contenido es unico en el documento**, **no puede ser descediente de article, aside, footer, header o nav.**
+**article**, se usa para el contenido que quiero reutilizar, ejemplo cada post en un foro, un articulo de una revista, estara en un article.
+**aside**, secciones que muestran un contenido en una barra lateral, cerca de los margenes, como la publicidad...
+**footer**, el pie de pagina, para indicar informacion del autor, contancto, etc.
+**header**, para un grupo de ayudas introductorias o de navegacion, tambien podria contener un logo, formulario de busqueda, nombre y autor...
+**nav**, seccion de la pagina que proporciona enlaces de navegacion, menus tabla de contenido e indices.
+**div**, para crear una caja.
+
+Tanto el nav como el div, nos servira para hacer cajas. No es que nav tenga una base por detras para hacer un menu de navegacion.
+
+**<hr>** para hacer unos saltos de linea o simples lineas.
 
 ### Resumen
 #### HTML
