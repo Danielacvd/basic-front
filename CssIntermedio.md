@@ -16,12 +16,12 @@ The **border-style** property specifies what kind of border to display.
 - none - Defines no border
 - hidden - Defines a hidden border
 
-Los <p> tienen bordes, los div..., estas cajas tienen **ANCHO del 100% de lo disponible**, **elemento de bloque**
-En cambios los <a>, su ancho se relaciona solo al numero de caracteres, no al **width** de la pagina, **elemento inline**
+Los ```<p>``` tienen bordes, los div..., estas cajas tienen **ANCHO del 100% de lo disponible**, **elemento de bloque**
+En cambios los ```<a>```, su ancho se relaciona solo al numero de caracteres, no al **width** de la pagina, **elemento inline**
 
 
 ## Elementos de bloque y de linea
-**Hay elementos que tienen el 100% del ancho disponible y otros solo usan un pedacito...**
+**Hay elementos que tienen el 100% del ancho disponible y otros solo usan un pedacito... aca podemos distribuir el ancho y alto sin problemas**
 **Esto es por la propiedad display**
 Tenemos el **display: block** y **display: inline**...
 
@@ -34,7 +34,7 @@ Tenemos el **display: block** y **display: inline**...
 - <footer>
 - <sección>
 
-**Elementos en linea**
+**Elementos en linea, aqui no se permite establecer un ancho y alto.**
 - <span>
 - <a>
 - <img>
@@ -51,12 +51,20 @@ Tenemos el **display: block** y **display: inline**...
 Con el padding, **generamos espacio/relleno alrededor del contenido HTML**.
 Entonces tenemos una caja, un <div>, dentro un <p>, si al <p> le agrego un padding generare relleno, espacio entre el contenido y el borde. Tengo TOP BOTTOM LEFT RIGHT, que son la direccion, hacia donde quiero agregar el padding, **siguen el sentido del relog**, arriba derecha abajo izquierda.
 **Si solo doy un padding: 100px**, tomara esos 100px en todos los ladtos, si solo tengo 2 valores, el primero toma arriba abajo y el segundo derecha izquierda.
-**Ser siempre especificom ser mas declarativo, se ve mas codigo, pero queda mucho mas claro que es lo que hace X clase**, si quiero padding hacia arriba padding-top: 10px, y lo mismo para las demas orientaciones.
+**Ser siempre especifico ser mas declarativo, se ve mas codigo, pero queda mucho mas claro que es lo que hace X clase**, si quiero padding hacia arriba padding-top: 10px, y lo mismo para las demas orientaciones.
 **Siempre revisar en el inspector de elementos, el valor en pixeles, orientaciones, etc...**
 **px => padding para eje x, derecha izquerda**
 **py => padding para eje y, arriba abajo**
 ![Modelo de cajas!](/imgDocu/modelo-caja.png "Modelo de cajas")
 ![Modelo de cajas!](/imgDocu/modelo-cajas-2.png "Modelo de cajas")
+
+## Margin
+El padding era el relleno de la caja, luego viene el border y finalmente el margin, su margen, su usan para crear un espacio alrededor de los elemeentos, fuera de los bordes definidos...
+Usamos **la propiedad margin** y los valores pueden ser top, bottom, right, left.
+
+## Altura y ancho, height y width
+Se usan para establecer el alto y ancho de un elemeneto, a un parrafo le agrego una clase border, en el css agrego en una clase width: 100px, height: 100px... Y esto establece el ancho y alto.
+
 
 ## Buenas practicas
 Siempre crear clases especificas para algo, para luego poder ir reutilizando, como las funciones...
