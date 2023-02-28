@@ -70,6 +70,10 @@ Por defecto un ```<a>``` tiene un display inline, por lo que si quiero agregar u
 **La diferencia entre inline-block y los elementos de bloques, como un parrafo, es que no agrega un salto de linea.**.
 Y ahora los ```<a>``` se van a poder agregar uno al lado del otro **asi un ```<a>``` puede parecer un boton**
 
+## Modelo de caja
+**El modelo de cajas sirve para hacer calculos**, si quiero calcular el ancho total de una caja, tengo que conciderar el ancho, padding, border, margin..., por lo que, **aunque digamos que una caja es de 320px** al final sera de **350px**, por todo lo que se le agrega (a veces por defecto),
+**Esto es un problema, si el ancho de pantalla es de 600px y quiero sacar ese calculo y saber cuantas cajas puedo poner horizontalmente tengo que tomar en concideracion esto**, establecer un ancho de la caja, pero tambien sumar el padding y border... **Para facilitar esto existe el box-sizing**
+![Modelo de cajas w3](/imgDocu/modelo-caja-w3school.png "Modelo de cajas")
 
 ## Buenas practicas
 Siempre crear clases especificas para algo, para luego poder ir reutilizando, como las funciones...
