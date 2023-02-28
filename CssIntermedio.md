@@ -65,6 +65,11 @@ Usamos **la propiedad margin** y los valores pueden ser top, bottom, right, left
 ## Altura y ancho, height y width
 Se usan para establecer el alto y ancho de un elemeneto, a un parrafo le agrego una clase border, en el css agrego en una clase width: 100px, height: 100px... Y esto establece el ancho y alto.
 
+## Inline-block, ancho y alto para elementos en linea
+Por defecto un ```<a>``` tiene un display inline, por lo que si quiero agregar un ancho a un ```<a>``` tengo que crear una nueva clase, en css creo la clase d-inline-block y le agrego **display: inline-block**, y ahora si puedo establecer ancho y alto para esos elementos, **ya no es inline, es inline-block**
+**La diferencia entre inline-block y los elementos de bloques, como un parrafo, es que no agrega un salto de linea.**.
+Y ahora los ```<a>``` se van a poder agregar uno al lado del otro **asi un ```<a>``` puede parecer un boton**
+
 
 ## Buenas practicas
 Siempre crear clases especificas para algo, para luego poder ir reutilizando, como las funciones...
