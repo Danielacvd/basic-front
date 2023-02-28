@@ -87,6 +87,11 @@ En html inventamos la clase border-box, en css:
 Ahora en el elemento HTML, vemos como mantiene su ancho establecidom width: 100px, y lo respeta... lo revisamos en el inspector, el contenido, como el border como el padding **se esta ajustando, se apreta, se junta todo, para que el ancho no sea mayor a 100px...**, el margen queda fuera del calculo, ya que es exterior.
 **Con esto no tenemos que realizar calculos, del padding izq con el derecho, no los border... siempre sera el ancho establecido...**
 
+## Normalize CSS
+Esto hace que todos los navegadores procesen los elementos de manera consistente. Lo que quiere decir que elimina los estilos/configuracion por defecto que tienen los navegadores.
+Solo se tiene que descargar, esto nos da una hoja en css, en donde resetea los elementos HTML, y lo dejamos dentro de un documento css
+[Normalize](https://necolas.github.io/normalize.css/)
+
 ## Buenas practicas
 Siempre crear clases especificas para algo, para luego poder ir reutilizando, como las funciones...
 Siempre separar los estilos en diferentes clase, asi se le pueden aplicar a diferentes etiquetas. Siempre ir desde lo mas general a lo especifico. Lo doy estilos generales a los parrafos, pero a cada parrafo especifico le agrego sus estilos propios, ejemplo formateo los parrafos de una forma general, y cambio el color de cada uno. Estructurar los estilos, los colores juntos, los espaciados juntos...
