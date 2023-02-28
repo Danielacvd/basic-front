@@ -75,6 +75,18 @@ Y ahora los ```<a>``` se van a poder agregar uno al lado del otro **asi un ```<a
 **Esto es un problema, si el ancho de pantalla es de 600px y quiero sacar ese calculo y saber cuantas cajas puedo poner horizontalmente tengo que tomar en concideracion esto**, establecer un ancho de la caja, pero tambien sumar el padding y border... **Para facilitar esto existe el box-sizing**
 ![Modelo de cajas w3](/imgDocu/modelo-caja-w3school.png "Modelo de cajas")
 
+## Box-sizing: border-box, ajustes automaticos de anchos y altos
+Para saber el ancho total de una caja, tengoq ue hacer muchas sumas... para facilitar esto box-sizing...
+**box-sizing:** es una propiedad, y **border-box** que es su valor, soluciona el tema de los calculos de css.
+En html inventamos la clase border-box, en css:
+ ```
+.boder-box{
+    box-sizing: border-box;
+}
+```
+Ahora en el elemento HTML, vemos como mantiene su ancho establecidom width: 100px, y lo respeta... lo revisamos en el inspector, el contenido, como el border como el padding **se esta ajustando, se apreta, se junta todo, para que el ancho no sea mayor a 100px...**, el margen queda fuera del calculo, ya que es exterior.
+**Con esto no tenemos que realizar calculos, del padding izq con el derecho, no los border... siempre sera el ancho establecido...**
+
 ## Buenas practicas
 Siempre crear clases especificas para algo, para luego poder ir reutilizando, como las funciones...
 Siempre separar los estilos en diferentes clase, asi se le pueden aplicar a diferentes etiquetas. Siempre ir desde lo mas general a lo especifico. Lo doy estilos generales a los parrafos, pero a cada parrafo especifico le agrego sus estilos propios, ejemplo formateo los parrafos de una forma general, y cambio el color de cada uno. Estructurar los estilos, los colores juntos, los espaciados juntos...
