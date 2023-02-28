@@ -92,6 +92,30 @@ Esto hace que todos los navegadores procesen los elementos de manera consistente
 Solo se tiene que descargar, esto nos da una hoja en css, en donde resetea los elementos HTML, y lo dejamos dentro de un documento css
 [Normalize](https://necolas.github.io/normalize.css/)
 
+## REM vs EM
+### Diferencia entre unidades relativas y absolutas
+**Medidas absolutas:** el valor se encuentra definido en terminos contretos y de manera medible, 100px, esto jamas cambiara, siempre seran lo mismo...
+**Medidas relativas:** tienen relacion y se calculan a partir de otro valor de referencia... puedo usarlas en decimales, 0.5rem.
+**Unidad Relativa 1:** REM, esta es relativa al HTML, especificamente al font-size, por defecto es de 16px, que es una medida estandar.
+Cuando se habla de 1 rem, esto quiere decir que el 1 se multiplica por el tamano base, que es 16, 1*16 y esto serian 16px, 1rem = 16px, asi sucesivamente.
+**Esto es independiente a los elementos anidados que pueda tener, siempre tomara los 16px del HTML**
+**Unidad relativa 2:** EM, si pongo 0.5em, el resultado sera el mismo 8px, **la diferencia del em, es que no siempre va a tomar el HTML**, si yo especifico que el body **el contenedor padre** del h1 en donde estamos probando, si en el body pongo font-size: 32px, se nota un cambio, ya que **em** va a buscar el font-size del h1 y como no lo tiene establecido va a subir un nivel, al body, y el body tiene un font-size de 32px, por lo que esa sera su unidad base. **Esta es la principal diferencia.**
+**El rem siempre independiente de su contenido supeior/padre TOMARA el del HTML.**
+```
+html{
+    font-size: 16px;
+}
+body{
+    font-size: 32px;
+}
+h1{
+    font-size: 1rem;
+}
+```
+**Esto no solo se usa para font-size, tambien para los padding**, padding: 1rem => 16px a todos lados...
+**Cual es la gracia de usar em, ya que rem es mas sencillo de usar...** => 
+**Esto lo puedo revisar en el inspector de elementos en COMPUTED** 
+
 ## Buenas practicas
 Siempre crear clases especificas para algo, para luego poder ir reutilizando, como las funciones...
 Siempre separar los estilos en diferentes clase, asi se le pueden aplicar a diferentes etiquetas. Siempre ir desde lo mas general a lo especifico. Lo doy estilos generales a los parrafos, pero a cada parrafo especifico le agrego sus estilos propios, ejemplo formateo los parrafos de una forma general, y cambio el color de cada uno. Estructurar los estilos, los colores juntos, los espaciados juntos...
@@ -99,3 +123,6 @@ Siempre separar los estilos en diferentes clase, asi se le pueden aplicar a dife
 **Valores/Estilos por defecto de cada navegador [Link W3School](https://www.w3schools.com/cssref/css_default_values.asp)**
 **Resetear los valores por defecto del navegador... se puede a mano o usando librerias (Normalize)**
 **Todos los elementos HTML y sus atributos [Link htmlReference](https://htmlreference.io/)**
+**font-size: 1rem;** siempre lo usan en rem, 16px el tamano del texto y 16 de padding, para que el font-size y el padding queden iguales, ya que el **em** toma la medida de su contenedor, para este caso el mismo H1, ya que queda establecido, toma la medida del H1... **Si aumento el tamano de la fuente, proporcionalmente aumenta el padding, esta es la gran ventaja, nos ahorramos configurar el padding, ya sabemos que si la fuente crece tambien lo hara el padding, para que nuestra caja siempre tenga ese crecimiento proporcional, entonces 1em siempre sera relativo al tamano de fuente, para este caso el h1 que esta tomando 2rem, que serian 32px de font-size...**, asi se cambian al valor del font-size a 3rem, no tengo que hacer tanto calculo para tener un buen padding y que crezca proporcionalmente, ya que el 1em esta tomando esa unidad relativa del font-size...
+**Siempre que quiera que el contenido crezca proporcionalmente,  padding, margin, width, height usar em, para lo demas como los texto REM.**
+![REM EM Unidades relativas](/imgDocu/emVSrem.png "Modelo de cajas")
