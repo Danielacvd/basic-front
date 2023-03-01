@@ -86,10 +86,35 @@ En html inventamos la clase border-box, en css:
 ```
 Ahora en el elemento HTML, vemos como mantiene su ancho establecidom width: 100px, y lo respeta... lo revisamos en el inspector, el contenido, como el border como el padding **se esta ajustando, se apreta, se junta todo, para que el ancho no sea mayor a 100px...**, el margen queda fuera del calculo, ya que es exterior.
 **Con esto no tenemos que realizar calculos, del padding izq con el derecho, no los border... siempre sera el ancho establecido...**
+**Universal Box Sizing with Inheritance**,  es una recomendacionpara usar el box-sizing: border box, 
+```
+*{
+    box-sizing: border-box;
+}
+
+```
+Con el ```*``` implicamos a todos el sitio web, pero con esta tecnica **puede que no todos los elementos queden con el box-sizing: box-border**
+```
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+```
+**Segunda tecnica**, que usa los before y after, que son pseudaClases para seleccionar elemenetos anteriores y despues de algun elemento, **aunque esto tambien puede llevar a traer problemas**
+```
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+```
+**Esta es la mejor recomendacion**, el html sea box-sizing: border-box, y los *, *before y after, **seria como un sistema de heredar a los elementos que le cuestan heredar el border-box del html, ahora si efecitvamente van a tener el box-sizing: border-box, para esto es el inherit**. **Esto desde el html, hasta despues de los *, siempre lo tengo que dejar al inicio de cada documento css!**.
 
 ## Normalize CSS
 Esto hace que todos los navegadores procesen los elementos de manera consistente. Lo que quiere decir que elimina los estilos/configuracion por defecto que tienen los navegadores.
 Solo se tiene que descargar, esto nos da una hoja en css, en donde resetea los elementos HTML, y lo dejamos dentro de un documento css
+**Para usar**, se le da download y se descarga como css, esto lo tenemos que agregarm a nuestro proyecto, lo agregamos en la carpeta de los css y lo vinculamos el link en el html, **debe ser el primer link, para que no sobreescriba todos los estilos.**
+**Con esto el sitio queda normalizado... casi que por defecto, sin los estilos del navegador.**
 [Normalize](https://necolas.github.io/normalize.css/)
 
 ## REM vs EM
@@ -127,3 +152,6 @@ Siempre separar los estilos en diferentes clase, asi se le pueden aplicar a dife
 **Siempre que quiera que el contenido crezca proporcionalmente,  padding, margin, width, height usar em, para lo demas como los texto REM.**
 ![REM EM Unidades relativas](/imgDocu/emVSrem.png "Modelo de cajas")
 [Google Fonts](https://fonts.google.com/), elijo la que me gusta, agrego los style y finalmente hago un link y lo llevo al head... y luego en el css, body, font-family que tambien lo saco de google.
+[loremPicsum](https://picsum.photos/) para sacar imagenes con las dimensiones que nosotros digamos... la imagen es el azar...
+**En la carpeta assets es donde quedan los recursos del sitio web, tambien pueden ir los js y los css...**
+[PaletasDeColores](https://coolors.co/palettes/trending), para tener varias paletas de colores...
