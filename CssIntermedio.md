@@ -141,6 +141,11 @@ h1{
 **Cual es la gracia de usar em, ya que rem es mas sencillo de usar...** => 
 **Esto lo puedo revisar en el inspector de elementos en COMPUTED** 
 
+## Container
+Es cuando todos los elementos HTMl estan dentro de una caja/contenedor, se le puede aplicar directamente al body, o directamente a todas las secciones de la pagina web... en css creo la clase .contanier.
+**Para que el contenido tenga un ancho maximo**, max-widt: 600px; **con esto establezco el ancho maximo**
+**Para centrar contenido, con margin-left: auto; margin-right: auto**, con esto se centra el contenido automaticamente!!! Teniendo un tamano maximo y tambien estableciendo un tamano cuando ese maximo es menor, con width: 95%...
+
 ## Buenas practicas
 Siempre crear clases especificas para algo, para luego poder ir reutilizando, como las funciones...
 Siempre separar los estilos en diferentes clase, asi se le pueden aplicar a diferentes etiquetas. Siempre ir desde lo mas general a lo especifico. Lo doy estilos generales a los parrafos, pero a cada parrafo especifico le agrego sus estilos propios, ejemplo formateo los parrafos de una forma general, y cambio el color de cada uno. Estructurar los estilos, los colores juntos, los espaciados juntos...
