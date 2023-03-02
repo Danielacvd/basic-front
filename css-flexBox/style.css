@@ -28,4 +28,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+}
+
+.h-700{
+    height: 700px;
+}
+
+.h-300{
+    height: 300px;
 }
