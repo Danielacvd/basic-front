@@ -146,6 +146,12 @@ Es cuando todos los elementos HTMl estan dentro de una caja/contenedor, se le pu
 **Para que el contenido tenga un ancho maximo**, max-widt: 600px; **con esto establezco el ancho maximo**
 **Para centrar contenido, con margin-left: auto; margin-right: auto**, con esto se centra el contenido automaticamente!!! Teniendo un tamano maximo y tambien estableciendo un tamano cuando ese maximo es menor, con width: 95%...
 
+## Logos
+En las ```<a>``` **para quitar los estilos por defecto, como el subrayado**, ``` text-decoration: none; ```, y queda sin ese subrayado
+**OJO, si a un elemento de linea, como a un enlace, le agrego la clase text-align: center, este no se centrara, para eso tengo que usar el display: block**, asi puede tomar el 100% de la pagina y puedo centrar el contenido.
+**Usar rem para font-size y para las medidas coo el ancho, padding, margin con em. Y em para los padding de la misma caja, para que el padding, margin o el ancho, sean relativos al tamano del texto**.
+
+
 ## Buenas practicas
 Siempre crear clases especificas para algo, para luego poder ir reutilizando, como las funciones...
 Siempre separar los estilos en diferentes clase, asi se le pueden aplicar a diferentes etiquetas. Siempre ir desde lo mas general a lo especifico. Lo doy estilos generales a los parrafos, pero a cada parrafo especifico le agrego sus estilos propios, ejemplo formateo los parrafos de una forma general, y cambio el color de cada uno. Estructurar los estilos, los colores juntos, los espaciados juntos...
