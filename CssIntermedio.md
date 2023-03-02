@@ -86,10 +86,35 @@ En html inventamos la clase border-box, en css:
 ```
 Ahora en el elemento HTML, vemos como mantiene su ancho establecidom width: 100px, y lo respeta... lo revisamos en el inspector, el contenido, como el border como el padding **se esta ajustando, se apreta, se junta todo, para que el ancho no sea mayor a 100px...**, el margen queda fuera del calculo, ya que es exterior.
 **Con esto no tenemos que realizar calculos, del padding izq con el derecho, no los border... siempre sera el ancho establecido...**
+**Universal Box Sizing with Inheritance**,  es una recomendacionpara usar el box-sizing: border box, 
+```
+*{
+    box-sizing: border-box;
+}
+
+```
+Con el ```*``` implicamos a todos el sitio web, pero con esta tecnica **puede que no todos los elementos queden con el box-sizing: box-border**
+```
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+```
+**Segunda tecnica**, que usa los before y after, que son pseudaClases para seleccionar elemenetos anteriores y despues de algun elemento, **aunque esto tambien puede llevar a traer problemas**
+```
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+```
+**Esta es la mejor recomendacion**, el html sea box-sizing: border-box, y los *, *before y after, **seria como un sistema de heredar a los elementos que le cuestan heredar el border-box del html, ahora si efecitvamente van a tener el box-sizing: border-box, para esto es el inherit**. **Esto desde el html, hasta despues de los *, siempre lo tengo que dejar al inicio de cada documento css!**.
 
 ## Normalize CSS
 Esto hace que todos los navegadores procesen los elementos de manera consistente. Lo que quiere decir que elimina los estilos/configuracion por defecto que tienen los navegadores.
 Solo se tiene que descargar, esto nos da una hoja en css, en donde resetea los elementos HTML, y lo dejamos dentro de un documento css
+**Para usar**, se le da download y se descarga como css, esto lo tenemos que agregarm a nuestro proyecto, lo agregamos en la carpeta de los css y lo vinculamos el link en el html, **debe ser el primer link, para que no sobreescriba todos los estilos.**
+**Con esto el sitio queda normalizado... casi que por defecto, sin los estilos del navegador.**
 [Normalize](https://necolas.github.io/normalize.css/)
 
 ## REM vs EM
@@ -116,6 +141,31 @@ h1{
 **Cual es la gracia de usar em, ya que rem es mas sencillo de usar...** => 
 **Esto lo puedo revisar en el inspector de elementos en COMPUTED** 
 
+## Container
+Es cuando todos los elementos HTMl estan dentro de una caja/contenedor, se le puede aplicar directamente al body, o directamente a todas las secciones de la pagina web... en css creo la clase .contanier.
+**Para que el contenido tenga un ancho maximo**, max-widt: 600px; **con esto establezco el ancho maximo**
+**Para centrar contenido, con margin-left: auto; margin-right: auto**, con esto se centra el contenido automaticamente!!! Teniendo un tamano maximo y tambien estableciendo un tamano cuando ese maximo es menor, con width: 95%...
+
+## Logos
+En las ```<a>``` **para quitar los estilos por defecto, como el subrayado**, ``` text-decoration: none; ```, y queda sin ese subrayado
+**OJO, si a un elemento de linea, como a un enlace, le agrego la clase text-align: center, este no se centrara, para eso tengo que usar el display: block**, asi puede tomar el 100% de la pagina y puedo centrar el contenido.
+**Usar rem para font-size y para las medidas coo el ancho, padding, margin con em. Y em para los padding de la misma caja, para que el padding, margin o el ancho, sean relativos al tamano del texto**.
+
+## Botones
+Para crear botones desde enlaces, tengo una lista de enlaces, y creo una clase btn en css, lo primero es sacar los subrayados, luego para trabajar con los anchos y altos, display: inline-block, con esto no sera de un elemento de bloque, pero va a tener todas los beneficios de trabajar con los bloques...
+**Border-radios: 0.5em**, para todos los lados de la caja...
+**Para los sgtes botones, que solo cambian el color, es mejor hacer una clase mas general de botones (btn) y luego hacer clases con el boton y su color btn-primary etc...**
+**Para eso son las clases reutilizables, tenemos que hacer una generica y luego resto de clases con lo especifico que cambia, ejemplo el color.**
+**Por esto siempre hay que ordenar el codigo en css... establezco el html, luego el body, el container, todos los botones, todos los colores... clases que se reutilizan, luego el logo y el card...**
+
+## Card
+Creamos la clase **card** en el css, pero ojo, que tambien podemos hacer una clase card-img, card-body, todo lo que necesitamos... 
+**Trabajar con la img...** => la imagen no respeta el ancho de la clase card excede el maximo... 
+**Para que la imagen respete este widt, que es mas pequeno unsamos, overflow: hidden:**, ahora si respetara el ancho que le decimos en la clase card.
+**El overflow: hidden**, cortara nuestro contenido para que permanezca dentro de esta tarjeta!.
+**En la clase de card-img, si ponemos width: 100%**, la imagen siempre se ajustara al 100% del ancho de su contenedor, **con el width: 100%, se hacen imagenes responsivas**.
+**Ahora tengo varios componentes reutilizables... igual que las funciones en js...**
+
 ## Buenas practicas
 Siempre crear clases especificas para algo, para luego poder ir reutilizando, como las funciones...
 Siempre separar los estilos en diferentes clase, asi se le pueden aplicar a diferentes etiquetas. Siempre ir desde lo mas general a lo especifico. Lo doy estilos generales a los parrafos, pero a cada parrafo especifico le agrego sus estilos propios, ejemplo formateo los parrafos de una forma general, y cambio el color de cada uno. Estructurar los estilos, los colores juntos, los espaciados juntos...
@@ -127,3 +177,6 @@ Siempre separar los estilos en diferentes clase, asi se le pueden aplicar a dife
 **Siempre que quiera que el contenido crezca proporcionalmente,  padding, margin, width, height usar em, para lo demas como los texto REM.**
 ![REM EM Unidades relativas](/imgDocu/emVSrem.png "Modelo de cajas")
 [Google Fonts](https://fonts.google.com/), elijo la que me gusta, agrego los style y finalmente hago un link y lo llevo al head... y luego en el css, body, font-family que tambien lo saco de google.
+[loremPicsum](https://picsum.photos/) para sacar imagenes con las dimensiones que nosotros digamos... la imagen es el azar...
+**En la carpeta assets es donde quedan los recursos del sitio web, tambien pueden ir los js y los css...**
+[PaletasDeColores](https://coolors.co/palettes/trending), para tener varias paletas de colores...
