@@ -28,8 +28,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     /* justify-content: center; */
-    /* align-items: center;
-    align-content: space-between; */
+    align-items: flex-end;
+    /* align-content: space-between; */
+}
+
+.align-self-start{
+    align-self: flex-start;
 }
 
 .h-700{
@@ -38,6 +42,9 @@
 
 .h-300{
     height: 300px;
+}
+.h-200{
+    height: 200px;
 }
 
 .order-1{
