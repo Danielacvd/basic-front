@@ -158,6 +158,14 @@ Para crear botones desde enlaces, tengo una lista de enlaces, y creo una clase b
 **Para eso son las clases reutilizables, tenemos que hacer una generica y luego resto de clases con lo especifico que cambia, ejemplo el color.**
 **Por esto siempre hay que ordenar el codigo en css... establezco el html, luego el body, el container, todos los botones, todos los colores... clases que se reutilizan, luego el logo y el card...**
 
+## Card
+Creamos la clase **card** en el css, pero ojo, que tambien podemos hacer una clase card-img, card-body, todo lo que necesitamos... 
+**Trabajar con la img...** => la imagen no respeta el ancho de la clase card excede el maximo... 
+**Para que la imagen respete este widt, que es mas pequeno unsamos, overflow: hidden:**, ahora si respetara el ancho que le decimos en la clase card.
+**El overflow: hidden**, cortara nuestro contenido para que permanezca dentro de esta tarjeta!.
+**En la clase de card-img, si ponemos width: 100%**, la imagen siempre se ajustara al 100% del ancho de su contenedor, **con el width: 100%, se hacen imagenes responsivas**.
+**Ahora tengo varios componentes reutilizables... igual que las funciones en js...**
+
 ## Buenas practicas
 Siempre crear clases especificas para algo, para luego poder ir reutilizando, como las funciones...
 Siempre separar los estilos en diferentes clase, asi se le pueden aplicar a diferentes etiquetas. Siempre ir desde lo mas general a lo especifico. Lo doy estilos generales a los parrafos, pero a cada parrafo especifico le agrego sus estilos propios, ejemplo formateo los parrafos de una forma general, y cambio el color de cada uno. Estructurar los estilos, los colores juntos, los espaciados juntos...
