@@ -64,3 +64,11 @@
 .flex-basis-1{
     flex-basis: 50%;
 }
+
+.flex-1{
+    flex: 1;
+}
+
+.flex-2{
+    flex: 1 1 300px;
+}
