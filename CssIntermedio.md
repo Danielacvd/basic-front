@@ -151,6 +151,12 @@ En las ```<a>``` **para quitar los estilos por defecto, como el subrayado**, ```
 **OJO, si a un elemento de linea, como a un enlace, le agrego la clase text-align: center, este no se centrara, para eso tengo que usar el display: block**, asi puede tomar el 100% de la pagina y puedo centrar el contenido.
 **Usar rem para font-size y para las medidas coo el ancho, padding, margin con em. Y em para los padding de la misma caja, para que el padding, margin o el ancho, sean relativos al tamano del texto**.
 
+## Botones
+Para crear botones desde enlaces, tengo una lista de enlaces, y creo una clase btn en css, lo primero es sacar los subrayados, luego para trabajar con los anchos y altos, display: inline-block, con esto no sera de un elemento de bloque, pero va a tener todas los beneficios de trabajar con los bloques...
+**Border-radios: 0.5em**, para todos los lados de la caja...
+**Para los sgtes botones, que solo cambian el color, es mejor hacer una clase mas general de botones (btn) y luego hacer clases con el boton y su color btn-primary etc...**
+**Para eso son las clases reutilizables, tenemos que hacer una generica y luego resto de clases con lo especifico que cambia, ejemplo el color.**
+**Por esto siempre hay que ordenar el codigo en css... establezco el html, luego el body, el container, todos los botones, todos los colores... clases que se reutilizan, luego el logo y el card...**
 
 ## Buenas practicas
 Siempre crear clases especificas para algo, para luego poder ir reutilizando, como las funciones...
