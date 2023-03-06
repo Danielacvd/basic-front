@@ -46,3 +46,13 @@ Para esto establecemos un alto para el contenedor padre. Con una clase le agrego
 **Al hacer esto cada uno de los items, que no tienen un alto configurado, pero de todas formas como el contenedor padre tiene 700px, ellos tratan de abarcar el 100% hacia abajo. Esta es la propiedad que se llama align-items y por DEFECTO ESTA EN stretch, que trata de abarca el 100% hacia abajo**
 **En el contenedor padre, agregamos align-items: flex-start**, los elementos se posicionan en la parte superior y **respetan su altura correspondiente**, con **flex-end** se posicionan en la parte inferior... **ESTOS EJEMPLOS se pueden realizar SIEMPRE QUE EL CONTENEDOR PADRE TENGA UNA ALTURA DEFINIDA.** **Si un elemento hijo tiene su altura definida, tambien se acomodara**, para esto usamos el **baseline**, que tratara de posicionar los elementos a partir de la base, como un texto.
 **aling-items: center**, los elementos se posicionan al medio de la pantalla.
+
+## align-content
+Con esta propiedad podemos distribuir cada uno de los items, ya sea separandolos, dejandolos juntos al incio o al final, etc.
+Es parecido al justify-content, solo este actua en forma horizontal y ahora trabajaremos de forma vertical...
+**Para trabajar de forma vertical, al menos hay que tener 2 filas.**
+**En el contenedor padre, agregamos align-content: space-between**, los elementos se ordenan hacia arriba y hacia abajo. **Esto va cambiando siempre y cuando tengamos mas de una fila, si todos los elementos estan en una fila no se notara.**
+**Cuando se trabaja con mas de una fila se distribuiran de forma vertical**. **No es lo mismo que elign-items que funciona de forma horizontal, tomamamos toda la fila y la posicionamos en alguna altura del contenedor padre.**, **cuando tenemos mas de una fila, podemos cambiar esa distribucion con align-content**
+
+
+## Hasta aca todo lo del contenedor padre... los elementos hijos tienen otra propiedades y valores.
