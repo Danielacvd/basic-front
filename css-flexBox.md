@@ -32,3 +32,11 @@ En ninguno de los elementos, items, tenemos un ancho establecido. Si en item agr
 **flex-wrap, para configurar que tanto se iran achicando/apretando**.
 En la clase flex-container, agregamos **flex-wrap: nowrap**, **nowrap** es el valor por defecto del flex-wrap **todos los elementos flexibles estaran en una sola linea**... asi que si vemos si algo cambia, no lo hara, se seguira achicando hasta salirse del contenedor padre.
 **flex-wrap: wrap; nos asegura que cada uno de los item sera de 200px, lo que establecimos. Por lo que si otro elemento no cabe  va a pasar a la parte de abajo.** Asi flexbox nos asegura que si a un item le asignamos una X cantidad de ancho siempre se vera de ese ancho y si en donde esta contenido no alcanza un proximo elemento, este sera empujado abajo. **flex-wrap: wrap; respetara el ancho y nustras cajas no se apretaran... a menos que el sitio web se encoja mucho, en ese caso si se encojeran los items para que sigan cabiendo en la caja padre.**
+
+## justify-content
+Eso es para distribuir los items que tengo en el contenedor padre, **esta propiedad la agrego en la clase del contenedor padre**.
+**justify-content: center**, cada uno de los elementos se posicionan en el centro del contenedor padre.
+**justify-content: space-between**, una caja se posiciona a lo mas izq que puede, otra al centro y otra a lo mas derecha que puede.
+**OJO que para todos estos ejemplos, estamos usando como contenedor padre el div, por lo que todos los items que agrego se van a gregando en una sola linea (si es que tengo la pantalla completa), si tubiera mas alto, intentarian abrir una segunda fila.**
+**justify-content: space-around**, para agregar un espaciado al lado izq y derecho y entre medio de cada elemento.
+**POR DEFECTO el justify-content: es flex-start**
