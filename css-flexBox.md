@@ -24,4 +24,11 @@ Con esto puedo **distribuir cada una de las cajas hijas**, de izq a derecha, de 
 **En la misma clase del contenedor padre, agrego el flex-direction**, ya que flex-direction depende de display: flex... 
 **flex-direction por DEFECTO estara en row**, por lo que van de izq a derecha, con el valor **row-reverse**, se distribuye de derecha a izq, **column** para que distribuya de arriba hacia abajo, **column-reverse** distribuye de abajo hacia arriba.
 **flex-direction ayuda mucho para hacer web responsivas.**
- 
+
+
+## flex-wrap
+En ninguno de los elementos, items, tenemos un ancho establecido. Si en item agregamos width:200px, cada caja va a tener 200px.
+**Si achicamos la ventana cada caja se ira apretando, tanto que al final se desbordan de su contenedor y de la web**.
+**flex-wrap, para configurar que tanto se iran achicando/apretando**.
+En la clase flex-container, agregamos **flex-wrap: nowrap**, **nowrap** es el valor por defecto del flex-wrap **todos los elementos flexibles estaran en una sola linea**... asi que si vemos si algo cambia, no lo hara, se seguira achicando hasta salirse del contenedor padre.
+**flex-wrap: wrap; nos asegura que cada uno de los item sera de 200px, lo que establecimos. Por lo que si otro elemento no cabe  va a pasar a la parte de abajo.** Asi flexbox nos asegura que si a un item le asignamos una X cantidad de ancho siempre se vera de ese ancho y si en donde esta contenido no alcanza un proximo elemento, este sera empujado abajo. **flex-wrap: wrap; respetara el ancho y nustras cajas no se apretaran... a menos que el sitio web se encoja mucho, en ese caso si se encojeran los items para que sigan cabiendo en la caja padre.**
