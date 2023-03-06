@@ -71,3 +71,10 @@ Tambien sacamos el ancho de 200px, de cada item, **solo abarcaran segun el CONTE
 **Flex-grow ayuda con la distribucion de cada uno de los elementos**, si a todos los elementos les agrego el flex-grow: 1, cada elemento va a tratar de usar el mayor espacio disponible, aunque da el aspecto de que tratan de distribuir el espacio de forma igualitaria.
 **Si a una clase le agrego flex-grow: 2 y lo agrego a un elemento, este, tratara de usar el doble de espacio de que usen los otros elementos**. **No es exactamente el doble que los otros lementos, pero trata de abarcarlo.**.
 **Si a todos los elementos los tengo con flex-grow: 1, todos tienen la distribucion con el mismo tamano, y esto es lo bueno, ya que NO TENEMOS QUE ESTAR CALCULANDO EL ANCHO PARA CADA ELEMENTO HIJO.**
+
+## flex-shrink
+Hace que el item con esta clase **no se reduzca de su tamano establecido**.
+Creamos la clase flex-shrink-0, y le damos la propiedad flex-shrink: 0, **si se la agregamos a algun elemento, ESTE YA TIENE QUE TENER ESTABLECIDO EL ANCHO MINIMO PARA FLEX-SHRINK**, por lo que cambiamos lo anterior y en la clase flex-shrink-0, agregamos width: 300px; flex-shrink: 0, ahora si achicamos la pantalla ese item tratara de siempre ser de 300px, pero si agrandamos tomara mas de esos 300px.
+**Siempre trata de no reducisse mas del ancho establecido para ese elemento, y si ya no cabe en la misma linea con los demas elemento bajara a una nueva linea, usandola completamente y SI SIGO ACHICANDO LA VENTANA SE DESBORDARA, ya que siempre tiene que ser de 300px MINIMOS.** 
+**Con flex-shrink: 0; el ancho que le configuremos no se reducira, PERO SI SE PUEDE AGRANDAR, por lo que siempre va a tener 300px, pero si hay mas espacio disponible lo usara, YA QUE TENEMOS EL FLEX-GROW: 1; si sacamos el flex-grow no se agrandara.**
+**Si sacamos el flex-wrap que esta configurado en el contenedor padre, este flex-wrap hace que los items no saltan a una nueva linea abajo, cuando hay poco espacio, entonces si lo sacamos y trenemos flex-shrink la caja se desbordara.** **Con el flex-wrap: wrap podemos hacer disenios RESPONSIVOS, ya que los elementos van pasando hacia abajo.**
