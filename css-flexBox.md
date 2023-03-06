@@ -78,3 +78,8 @@ Creamos la clase flex-shrink-0, y le damos la propiedad flex-shrink: 0, **si se 
 **Siempre trata de no reducisse mas del ancho establecido para ese elemento, y si ya no cabe en la misma linea con los demas elemento bajara a una nueva linea, usandola completamente y SI SIGO ACHICANDO LA VENTANA SE DESBORDARA, ya que siempre tiene que ser de 300px MINIMOS.** 
 **Con flex-shrink: 0; el ancho que le configuremos no se reducira, PERO SI SE PUEDE AGRANDAR, por lo que siempre va a tener 300px, pero si hay mas espacio disponible lo usara, YA QUE TENEMOS EL FLEX-GROW: 1; si sacamos el flex-grow no se agrandara.**
 **Si sacamos el flex-wrap que esta configurado en el contenedor padre, este flex-wrap hace que los items no saltan a una nueva linea abajo, cuando hay poco espacio, entonces si lo sacamos y trenemos flex-shrink la caja se desbordara.** **Con el flex-wrap: wrap podemos hacer disenios RESPONSIVOS, ya que los elementos van pasando hacia abajo.**
+
+## flex-basis
+**flex-basis obliga a un item a tener una proporcion determinada**.
+Agregamos la clase flex-basis-1, con una propiedad flex-basis y el valor 50%, **esto se lo agregamos a algun item, el 1, y este va a tener una proporcion del 50% con respecto al tamano disponible.** Si la pantalla es pequena quizas abarque una linea completa, pero si es mas grande puede que quede espacio para el resto de elementos. **Obligamos que un elemento tenga el 50% del tamano disponible.**
+**Flex-basis tratara de abarcar la proporcion que le indicamos, pero si es muy pequena la ventana, se ira achicando junto al padre...**
