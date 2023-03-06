@@ -28,27 +28,27 @@ body{
 
 .btn-primary {
     color: white;
-    background-color: #264653;
+    background-color: #0F2620;
 }
 
 .btn-secondary {
     color: white;
-    background-color: #2a9d8f;
+    background-color: #7BA69A;
 }
 
 .btn-danger {
     color: white;
-    background-color: #e76f51;
+    background-color: #A6444C;
 }
 
-.btn-info {
+.btn-light {
     color: black;
-    background-color: #e9c46a;
+    background-color: #DDF2CE;
 }
 
 .btn-dark {
-    color: black;
-    background-color: #f4a261;
+    color: white;
+    background-color: #423830;
 }
 
 
@@ -106,12 +106,26 @@ body{
     border-radius: 3.5em;
 }
 
+/* Main */
+.main{
+    background-color: white;
+    padding: 0.3em;
+    border-radius: 0.3em;
+    margin-top: -2em;
+}
+
+.main-title{
+    text-align: center;
+    text-transform: uppercase;
+}
+
 /* Card */
 .card {
-    background-color: #2a9d8f;
+    background-color: #0F2620;
     color: white;
     overflow: hidden;
     border-radius: 0.5em;
+    margin-bottom: 1em;
 }
 
 .card-img {
