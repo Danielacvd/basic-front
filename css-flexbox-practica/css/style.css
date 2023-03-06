@@ -9,3 +9,19 @@ html {
 body{
     font-family: 'Raleway', sans-serif;
 }
+/* Utilitarias */
+.container{
+    width: 80%;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Header */
+.bg-header{
+    background-image: url('../assets/images/bg-header-min.jpg');
+    height: 18.75em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
