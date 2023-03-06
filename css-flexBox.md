@@ -83,3 +83,10 @@ Creamos la clase flex-shrink-0, y le damos la propiedad flex-shrink: 0, **si se 
 **flex-basis obliga a un item a tener una proporcion determinada**.
 Agregamos la clase flex-basis-1, con una propiedad flex-basis y el valor 50%, **esto se lo agregamos a algun item, el 1, y este va a tener una proporcion del 50% con respecto al tamano disponible.** Si la pantalla es pequena quizas abarque una linea completa, pero si es mas grande puede que quede espacio para el resto de elementos. **Obligamos que un elemento tenga el 50% del tamano disponible.**
 **Flex-basis tratara de abarcar la proporcion que le indicamos, pero si es muy pequena la ventana, se ira achicando junto al padre...**
+
+## flex
+Hacemos un segundo div contenedor dentro del contenedor padre, hacemos 3 nuevos elementos y le sacamos todos los estilos de item.
+**Cremos una clase que contenga el flex grow, shrink y basis.** 
+**En la clase flex-1, agregamos la propiedad flex: su valor corresponde a flex grow, lo dejamos en 1**, si esta clase se la agrego a todos los items, todos se distribuyen de la misma forma, **el primer valor de la PROPIEDAD FLEX es FLEX-GROW**.
+Su siguiente valor es **flex-shrink**, **dentro de flex-1, flex: 1 0**, con esto lo diremos que NO SE ACHIQUEN LOS ELEMENTOS.
+**El tercer valor es el flex-basis, flex: 1 0 300px, le doy 300px de flex-basis**, ahora si es que caben los 3 elementos con 300px los mostrara en una sola linea, pero si se achica alguno pasara a la parte inferior, **para que pase a la parte inferior NECESITO TENER EL FLEX-WRAP: WRAP en el CONTENEDOR PADRE, pero si la caja en inferior a los 300px, se desbordaran los items, ya que el flex-shrink esta en 0, ME IMPODI QUE LAS CAJAS SE ACHIQUEN MAS DE LOS 300PX... Si lo dejamos en 1, el flex-shrink, lo elementos si se achicaran aun mas!...**
