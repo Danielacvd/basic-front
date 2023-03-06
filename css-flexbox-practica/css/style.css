@@ -145,3 +145,40 @@ body{
 .card-body p {
     font-weight: 200;
 }
+
+/* Nosotros */
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+    background-color: #423830;
+}
+
+.nosotros-col-img{
+    background-image: url('../assets/images/nosotros-min.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 21.875em;
+    width: 100%;
+    order: 2;
+}
+
+.nosotros-col-text{
+    order: 1;
+}
+
+.nosotros-body{
+    padding: 1em;
+    text-align: center;
+    color: white;
+}
+.nosotros-body h2{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.nosotros-body p{
+    font-weight: 200;
+}
