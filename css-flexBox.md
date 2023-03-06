@@ -90,3 +90,10 @@ Hacemos un segundo div contenedor dentro del contenedor padre, hacemos 3 nuevos 
 **En la clase flex-1, agregamos la propiedad flex: su valor corresponde a flex grow, lo dejamos en 1**, si esta clase se la agrego a todos los items, todos se distribuyen de la misma forma, **el primer valor de la PROPIEDAD FLEX es FLEX-GROW**.
 Su siguiente valor es **flex-shrink**, **dentro de flex-1, flex: 1 0**, con esto lo diremos que NO SE ACHIQUEN LOS ELEMENTOS.
 **El tercer valor es el flex-basis, flex: 1 0 300px, le doy 300px de flex-basis**, ahora si es que caben los 3 elementos con 300px los mostrara en una sola linea, pero si se achica alguno pasara a la parte inferior, **para que pase a la parte inferior NECESITO TENER EL FLEX-WRAP: WRAP en el CONTENEDOR PADRE, pero si la caja en inferior a los 300px, se desbordaran los items, ya que el flex-shrink esta en 0, ME IMPODI QUE LAS CAJAS SE ACHIQUEN MAS DE LOS 300PX... Si lo dejamos en 1, el flex-shrink, lo elementos si se achicaran aun mas!...**
+
+## align-self
+**Con esta propiedad le dicimos a un elemento hijo, que se posiciona donde queramos...**
+Volvemos a crear un nuevo div dentro del div padre, con 3 items y sin clases de hijos...
+A uno de estos items le damos alturo de 200px, y vemos que tenemos comportamiento stretch, todos los elementos demas elementos tratran de abarcar los 200px de altura.
+**A la clase padre agramos un align-items: flex-end, los elementos sin la clase de altura, quedaran de su altura normal y quedan abajo..., PERO SI YO QUIERO QUE UNO DE ESTOS ITEMS NO QUEDE A LO MAS ABAJO, SINO QUE AL MEDIO O ARRIBA, PUEDO USAR EL ALIGN-SELF**
+**Creo la clase align-self-start, su propiedad sera align-self: con el valor flex-start,** esto se lo agrego al elemento hijo que yo quiero que este en la parte superior...
