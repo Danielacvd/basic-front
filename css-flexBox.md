@@ -18,3 +18,10 @@ Ya tenemos un contenedor padre y elemenetos en su interior, el div con clase bor
 **Propiedades del contenedor padre, lo mas importante, de momeneto no se tocaran los items**
 **Creamos una clase para el contenedor padre, flex-container**, este lo creamos en el css, ya sabemos de los diaplay inline y block, pero tambien esta el **display: flex**, le agregamos esta propiedad a la clase y vemos que cada item se puso uno al lado del otro, **ahora los elementos son flexibles**... **varias de las cosas que pasan en flexbox estan dadas por defecto**
 **Ahora en contenedor padre tiene un display flex, asi sus elementos hijos se colocan uno al lado del otro.**, pero no quiere decir que sea un display inline, ahora son elementos flexibles
+
+## flex-direction
+Con esto puedo **distribuir cada una de las cajas hijas**, de izq a derecha, de derecha a izq, o en forma de columnas, de arriba abajo, abajo arriba... Estas propiedades y valores se establecen con **flex-direction**.
+**En la misma clase del contenedor padre, agrego el flex-direction**, ya que flex-direction depende de display: flex... 
+**flex-direction por DEFECTO estara en row**, por lo que van de izq a derecha, con el valor **row-reverse**, se distribuye de derecha a izq, **column** para que distribuya de arriba hacia abajo, **column-reverse** distribuye de abajo hacia arriba.
+**flex-direction ayuda mucho para hacer web responsivas.**
+ 
