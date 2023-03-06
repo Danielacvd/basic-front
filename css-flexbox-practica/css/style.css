@@ -182,3 +182,14 @@ body{
 .nosotros-body p{
     font-weight: 200;
 }
+
+/* Footer */
+.bg-footer{
+    background-color: #423830;
+    color: white;
+}
+.bg-footer p{
+    margin: 0;
+    padding: 1em 0;
+    text-align: center;
+}
