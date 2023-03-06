@@ -62,3 +62,12 @@ Es parecido al justify-content, solo este actua en forma horizontal y ahora trab
 Para modificar el orden en el que se visualizan los elementos, usamos el order.
 **Esta propiedad no se agrega al contenedor padre, la configuramos por separado y luego se la agregamos al item**
 **order-1{order: 1}**, si esto se lo agrego a un elemento lo mandara al final de la lista... ya que **con order establacemos la prioridad**, va desde el 0 al infinito... **por defecto esta configurado en 0, por lo que todos los elementos que tengan el order: 0, se posicionaran antes de los demas**, por lo que el 1, no es de tanto prioridad..., el 0 es la maximo prioridad... mientras mas bajo el numero del order mas a la izq, o primero aparecera el item. La prioridad de order es la que manda y se puede configurar. Va de 0 al infinito, el 0 es la mayor prioridad.
+
+## flex-grow
+(para visualizar bien, sacar el justify-content de la clase pabre, y sacar los oreders.)
+Tambien sacamos el ancho de 200px, de cada item, **solo abarcaran segun el CONTENIDO que tenga cada item**, si a un item le agrego mas texto, este va a tener mas ancho, ya que el contenido necesita mas espacio...
+**Con flex-grow, puedo distribuir y manejar esos espacios**, al igual que ```order``` creo la clase por separado para luego agregarla a los items, no la creo directo en el contenedor padre.
+**A la clase, le damos el nombre flex-grow-1, agregamos la propiedad flex-grow: valor 1**, esta clase de la agrego a un elemento, **este elemento trata de abarcar el mayor espacio disponible, dejando a los otro elementos con su tamano por defecto**.
+**Flex-grow ayuda con la distribucion de cada uno de los elementos**, si a todos los elementos les agrego el flex-grow: 1, cada elemento va a tratar de usar el mayor espacio disponible, aunque da el aspecto de que tratan de distribuir el espacio de forma igualitaria.
+**Si a una clase le agrego flex-grow: 2 y lo agrego a un elemento, este, tratara de usar el doble de espacio de que usen los otros elementos**. **No es exactamente el doble que los otros lementos, pero trata de abarcarlo.**.
+**Si a todos los elementos los tengo con flex-grow: 1, todos tienen la distribucion con el mismo tamano, y esto es lo bueno, ya que NO TENEMOS QUE ESTAR CALCULANDO EL ANCHO PARA CADA ELEMENTO HIJO.**
