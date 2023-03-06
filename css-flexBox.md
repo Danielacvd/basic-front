@@ -62,3 +62,38 @@ Es parecido al justify-content, solo este actua en forma horizontal y ahora trab
 Para modificar el orden en el que se visualizan los elementos, usamos el order.
 **Esta propiedad no se agrega al contenedor padre, la configuramos por separado y luego se la agregamos al item**
 **order-1{order: 1}**, si esto se lo agrego a un elemento lo mandara al final de la lista... ya que **con order establacemos la prioridad**, va desde el 0 al infinito... **por defecto esta configurado en 0, por lo que todos los elementos que tengan el order: 0, se posicionaran antes de los demas**, por lo que el 1, no es de tanto prioridad..., el 0 es la maximo prioridad... mientras mas bajo el numero del order mas a la izq, o primero aparecera el item. La prioridad de order es la que manda y se puede configurar. Va de 0 al infinito, el 0 es la mayor prioridad.
+
+## flex-grow
+(para visualizar bien, sacar el justify-content de la clase pabre, y sacar los oreders.)
+Tambien sacamos el ancho de 200px, de cada item, **solo abarcaran segun el CONTENIDO que tenga cada item**, si a un item le agrego mas texto, este va a tener mas ancho, ya que el contenido necesita mas espacio...
+**Con flex-grow, puedo distribuir y manejar esos espacios**, al igual que ```order``` creo la clase por separado para luego agregarla a los items, no la creo directo en el contenedor padre.
+**A la clase, le damos el nombre flex-grow-1, agregamos la propiedad flex-grow: valor 1**, esta clase de la agrego a un elemento, **este elemento trata de abarcar el mayor espacio disponible, dejando a los otro elementos con su tamano por defecto**.
+**Flex-grow ayuda con la distribucion de cada uno de los elementos**, si a todos los elementos les agrego el flex-grow: 1, cada elemento va a tratar de usar el mayor espacio disponible, aunque da el aspecto de que tratan de distribuir el espacio de forma igualitaria.
+**Si a una clase le agrego flex-grow: 2 y lo agrego a un elemento, este, tratara de usar el doble de espacio de que usen los otros elementos**. **No es exactamente el doble que los otros lementos, pero trata de abarcarlo.**.
+**Si a todos los elementos los tengo con flex-grow: 1, todos tienen la distribucion con el mismo tamano, y esto es lo bueno, ya que NO TENEMOS QUE ESTAR CALCULANDO EL ANCHO PARA CADA ELEMENTO HIJO.**
+
+## flex-shrink
+Hace que el item con esta clase **no se reduzca de su tamano establecido**.
+Creamos la clase flex-shrink-0, y le damos la propiedad flex-shrink: 0, **si se la agregamos a algun elemento, ESTE YA TIENE QUE TENER ESTABLECIDO EL ANCHO MINIMO PARA FLEX-SHRINK**, por lo que cambiamos lo anterior y en la clase flex-shrink-0, agregamos width: 300px; flex-shrink: 0, ahora si achicamos la pantalla ese item tratara de siempre ser de 300px, pero si agrandamos tomara mas de esos 300px.
+**Siempre trata de no reducisse mas del ancho establecido para ese elemento, y si ya no cabe en la misma linea con los demas elemento bajara a una nueva linea, usandola completamente y SI SIGO ACHICANDO LA VENTANA SE DESBORDARA, ya que siempre tiene que ser de 300px MINIMOS.** 
+**Con flex-shrink: 0; el ancho que le configuremos no se reducira, PERO SI SE PUEDE AGRANDAR, por lo que siempre va a tener 300px, pero si hay mas espacio disponible lo usara, YA QUE TENEMOS EL FLEX-GROW: 1; si sacamos el flex-grow no se agrandara.**
+**Si sacamos el flex-wrap que esta configurado en el contenedor padre, este flex-wrap hace que los items no saltan a una nueva linea abajo, cuando hay poco espacio, entonces si lo sacamos y trenemos flex-shrink la caja se desbordara.** **Con el flex-wrap: wrap podemos hacer disenios RESPONSIVOS, ya que los elementos van pasando hacia abajo.**
+
+## flex-basis
+**flex-basis obliga a un item a tener una proporcion determinada**.
+Agregamos la clase flex-basis-1, con una propiedad flex-basis y el valor 50%, **esto se lo agregamos a algun item, el 1, y este va a tener una proporcion del 50% con respecto al tamano disponible.** Si la pantalla es pequena quizas abarque una linea completa, pero si es mas grande puede que quede espacio para el resto de elementos. **Obligamos que un elemento tenga el 50% del tamano disponible.**
+**Flex-basis tratara de abarcar la proporcion que le indicamos, pero si es muy pequena la ventana, se ira achicando junto al padre...**
+
+## flex
+Hacemos un segundo div contenedor dentro del contenedor padre, hacemos 3 nuevos elementos y le sacamos todos los estilos de item.
+**Cremos una clase que contenga el flex grow, shrink y basis.** 
+**En la clase flex-1, agregamos la propiedad flex: su valor corresponde a flex grow, lo dejamos en 1**, si esta clase se la agrego a todos los items, todos se distribuyen de la misma forma, **el primer valor de la PROPIEDAD FLEX es FLEX-GROW**.
+Su siguiente valor es **flex-shrink**, **dentro de flex-1, flex: 1 0**, con esto lo diremos que NO SE ACHIQUEN LOS ELEMENTOS.
+**El tercer valor es el flex-basis, flex: 1 0 300px, le doy 300px de flex-basis**, ahora si es que caben los 3 elementos con 300px los mostrara en una sola linea, pero si se achica alguno pasara a la parte inferior, **para que pase a la parte inferior NECESITO TENER EL FLEX-WRAP: WRAP en el CONTENEDOR PADRE, pero si la caja en inferior a los 300px, se desbordaran los items, ya que el flex-shrink esta en 0, ME IMPODI QUE LAS CAJAS SE ACHIQUEN MAS DE LOS 300PX... Si lo dejamos en 1, el flex-shrink, lo elementos si se achicaran aun mas!...**
+
+## align-self
+**Con esta propiedad le dicimos a un elemento hijo, que se posiciona donde queramos...**
+Volvemos a crear un nuevo div dentro del div padre, con 3 items y sin clases de hijos...
+A uno de estos items le damos alturo de 200px, y vemos que tenemos comportamiento stretch, todos los elementos demas elementos tratran de abarcar los 200px de altura.
+**A la clase padre agramos un align-items: flex-end, los elementos sin la clase de altura, quedaran de su altura normal y quedan abajo..., PERO SI YO QUIERO QUE UNO DE ESTOS ITEMS NO QUEDE A LO MAS ABAJO, SINO QUE AL MEDIO O ARRIBA, PUEDO USAR EL ALIGN-SELF**
+**Creo la clase align-self-start, su propiedad sera align-self: con el valor flex-start,** esto se lo agrego al elemento hijo que yo quiero que este en la parte superior...
