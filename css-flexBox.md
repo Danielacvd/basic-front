@@ -54,5 +54,11 @@ Es parecido al justify-content, solo este actua en forma horizontal y ahora trab
 **En el contenedor padre, agregamos align-content: space-between**, los elementos se ordenan hacia arriba y hacia abajo. **Esto va cambiando siempre y cuando tengamos mas de una fila, si todos los elementos estan en una fila no se notara.**
 **Cuando se trabaja con mas de una fila se distribuiran de forma vertical**. **No es lo mismo que elign-items que funciona de forma horizontal, tomamamos toda la fila y la posicionamos en alguna altura del contenedor padre.**, **cuando tenemos mas de una fila, podemos cambiar esa distribucion con align-content**
 
-
 ## Hasta aca todo lo del contenedor padre... los elementos hijos tienen otra propiedades y valores.
+
+## Desde aca, items hijos...
+
+## order (elementos hijos)
+Para modificar el orden en el que se visualizan los elementos, usamos el order.
+**Esta propiedad no se agrega al contenedor padre, la configuramos por separado y luego se la agregamos al item**
+**order-1{order: 1}**, si esto se lo agrego a un elemento lo mandara al final de la lista... ya que **con order establacemos la prioridad**, va desde el 0 al infinito... **por defecto esta configurado en 0, por lo que todos los elementos que tengan el order: 0, se posicionaran antes de los demas**, por lo que el 1, no es de tanto prioridad..., el 0 es la maximo prioridad... mientras mas bajo el numero del order mas a la izq, o primero aparecera el item. La prioridad de order es la que manda y se puede configurar. Va de 0 al infinito, el 0 es la mayor prioridad.
