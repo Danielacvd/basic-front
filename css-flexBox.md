@@ -40,3 +40,9 @@ Eso es para distribuir los items que tengo en el contenedor padre, **esta propie
 **OJO que para todos estos ejemplos, estamos usando como contenedor padre el div, por lo que todos los items que agrego se van a gregando en una sola linea (si es que tengo la pantalla completa), si tubiera mas alto, intentarian abrir una segunda fila.**
 **justify-content: space-around**, para agregar un espaciado al lado izq y derecho y entre medio de cada elemento.
 **POR DEFECTO el justify-content: es flex-start**
+
+## align-items
+Para esto establecemos un alto para el contenedor padre. Con una clase le agrego una altura de 700px...
+**Al hacer esto cada uno de los items, que no tienen un alto configurado, pero de todas formas como el contenedor padre tiene 700px, ellos tratan de abarcar el 100% hacia abajo. Esta es la propiedad que se llama align-items y por DEFECTO ESTA EN stretch, que trata de abarca el 100% hacia abajo**
+**En el contenedor padre, agregamos align-items: flex-start**, los elementos se posicionan en la parte superior y **respetan su altura correspondiente**, con **flex-end** se posicionan en la parte inferior... **ESTOS EJEMPLOS se pueden realizar SIEMPRE QUE EL CONTENEDOR PADRE TENGA UNA ALTURA DEFINIDA.** **Si un elemento hijo tiene su altura definida, tambien se acomodara**, para esto usamos el **baseline**, que tratara de posicionar los elementos a partir de la base, como un texto.
+**aling-items: center**, los elementos se posicionan al medio de la pantalla.
