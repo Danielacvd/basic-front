@@ -192,6 +192,27 @@ body{
     order: 1;
 }
 
+@media (min-width: 576px){
+    .nosotros-col-img{
+        height: 500px;
+    }
+}
+
+@media (min-width: 768px){
+    .nosotros{
+        flex-direction: row;
+    }
+    .nosotros-col-img{
+        order: 1;
+
+    }
+    .nosotros-col-text{
+        order: 2;
+
+    }
+}
+
+
 .nosotros-body{
     padding: 1em;
     text-align: center;
