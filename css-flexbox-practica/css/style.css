@@ -134,6 +134,14 @@ body{
     text-transform: uppercase;
 }
 
+/* Tienda */
+@media (min-width: 768px){
+    .tienda{
+        display: flex;
+        gap: 1em;
+    }
+}
+
 /* Card */
 .card {
     background-color: #0F2620;
