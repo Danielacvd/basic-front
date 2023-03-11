@@ -1,0 +1,104 @@
+/*
+primary: 8ecae6
+secondary: 219ebc
+info: 023047
+danger: fb8500
+*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 95%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mt-2{
+    margin-top: 2rem;
+}
+
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.5em;
+    margin: 0 0.1em;
+    border-radius: 0.5em;
+}
+
+.btn-primary{
+
+    background-color: #8ecae6;
+    color: white;
+}
+
+
+.btn-secondary{
+
+    background-color: #219ebc;
+    color: white;
+}
+
+.btn-danger{
+
+    background-color: #fb8500;
+    color: black;
+}
+
+.btn-info{
+    background-color: #023047;
+    color: ghostwhite;
+}
+
+.logo{
+    display: block;
+    font-size: 3rem;
+    padding: 1em;
+    text-decoration: none;
+    text-align: center;
+    background-color: #8ecae6;
+    color: white;
+}
+
+.card{
+    width: 20rem;
+    background-color: hsl(200, 81%, 49%);
+    overflow: hidden;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.card-img{
+    width: 100%;
+}
+
+.card-body{
+    padding: 1em;
+}
+.card-body h5{
+    font-size: 1.5rem;
+    margin: 1em 0;
+    font-weight: 900;
+}
+
+
+.card-body p{
+    font-weight: 300;
+}
+
+.center{
+    text-align: center;
+}
