@@ -1,0 +1,95 @@
+/*
+Primary => 2C3333
+Secundary => 2E4F4F
+Danger => 0E8388
+Info => CBE4DE
+
+
+
+*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    background-color: aqua;
+    width: 95%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+header{
+    
+}
+
+h1 {
+    background-color: #2C3333;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+
+nav{
+
+}
+
+.mt-2{
+    margin-top: 2rem;
+}
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 0.5em;
+    margin: 0.5em;
+
+}
+
+.btn-primary{
+    background-color: #2C3333;
+    color: white;
+}
+
+.btn-secundary{
+    background-color: #2E4F4F;
+    color: white;
+}
+
+.btn-danger{
+    background-color: #0E8388;
+    color: white;
+}
+
+.btn-info{
+    background-color: #CBE4DE;
+    color: white;
+}
+
+.card{
+    width: 20rem;
+    background-color: aquamarine;
+}
+
+.card img{
+    overflow: hidden;
+    width: 100%;
+}
